@@ -1,0 +1,27 @@
+<script id="summary-body-template" type="text/x-handlebars-template">
+  {{#each this}}
+    <tr>
+      <td>
+        <div class='wrrap-icon_category'>
+          <svg class='icon svg_icon_category'><use href='{{idIcon category}}'></use></svg>
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-category-summary'>
+          {{category}}
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-active'>
+          {{active}}
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-archived'>
+          {{archived}}
+        </div>
+      </td>
+
+    </tr>
+  {{/each}}
+</script>

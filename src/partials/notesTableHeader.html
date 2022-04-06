@@ -1,0 +1,19 @@
+<script id="notes-header-template" type="text/x-handlebars-template">
+  <tr>
+    <th></th>
+    {{#each this}}
+      <th>{{this}}</th>
+    {{/each}}
+    <th></th>
+    <th>
+      <div class='wrrap_archive icon-header'>
+        <svg class='icon svg_archive'><use href='{{idIcon "in_archive"}}'></use></svg>
+      </div>
+    </th>
+    <th>
+      <div class='wrrap_icon_delete-all icon-header'>
+        <svg class='icon svg_delete'><use href='{{idIcon "delete"}}'></use></svg>
+      </div>
+    </th>
+  </tr>
+</script>

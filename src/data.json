@@ -1,0 +1,74 @@
+[
+  {
+    "id": "XWaQXcbk0",
+    "name": "Shopping list",
+    "content": "Fruits, Tomatoes, Peaches, Tuna, Potatoes , Garlic , Sour cream , Bacon , Hard cheese , Green onions",
+    "craeted": "April 20, 2022",
+    "category": "Task",
+    "dates": "",
+    "archived": false
+  },
+  {
+    "id": "pkXzyRp1P",
+    "name": "The theory of evolution",
+    "content": "Charles Darwin's theory of evolution",
+    "craeted": "April 20, 2022",
+    "category": "Random Thought",
+    "dates": "",
+    "archived": true
+  },
+  {
+    "id": "QMom9q4Ku",
+    "name": "New feature",
+    "content": "Implement new",
+    "craeted": "April 20, 2022",
+    "category": "Task",
+    "dates": "",
+    "archived": false
+  },
+  {
+    "id": "k2k0UrjZG",
+    "name": "Health",
+    "content": "Introduce a new rule not to eat after six in the evening",
+    "craeted": "April 20, 2022",
+    "category": "Quote",
+    "dates": "",
+    "archived": false
+  },
+  {
+    "id": "j2k8U1jZd",
+    "name": "William Gaddis",
+    "content": "Justice? -You get justice in the next world, in this world you have the law 01.06.",
+    "craeted": "April 20, 2022",
+    "category": "Task",
+    "dates": "",
+    "archived": true
+  },
+  {
+    "id": "X2aQ7cvkd",
+    "name": "Сourse",
+    "content": "Enroll in English 01.06.2022 language courses until 01.05.2022",
+    "craeted": "April 20, 2022",
+    "category": "Idea",
+    "dates": "",
+    "archived": false
+  },
+  {
+    "id": "nk3zy1pf8",
+    "name": "Hospital",
+    "content": "Make an appointment with a dentist",
+    "craeted": "April 20, 2022",
+    "category": "Idea",
+    "dates": "",
+    "archived": false
+  },
+  {
+    "id": "b7k2U13fd",
+    "name": "Books",
+    "content": "The Lean Startup",
+    "craeted": "April 20, 2022",
+    "category": "Task",
+    "dates": "",
+    "archived": false
+  }
+]

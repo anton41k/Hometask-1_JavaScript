@@ -1,0 +1,16 @@
+:root {
+  --main-font-family: 'Roboto', sans-serif;
+  --color-text-black: rgb(78, 79, 82);
+  --color-text-white: rgb(255, 255, 255);
+  --color-icon-black: rgb(0, 0, 0);
+  --color-fill-icon: rgb(97, 97, 97);
+  --color-bgc-td: rgb(232, 234, 245);
+  --color-bgc-th: rgb(153, 153, 153);
+  --color-bgc-backdrop: rgb(153, 153, 153, 0.5);
+  --color-stroce-icon: rgb(122, 122, 122);
+
+  --delay: 250ms;
+  --fun-transition: cubic-bezier(0.4, 0, 0.2, 1);
+  --team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}

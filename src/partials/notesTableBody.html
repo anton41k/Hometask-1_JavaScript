@@ -1,0 +1,61 @@
+<script id="notes-body-template" type="text/x-handlebars-template">
+  {{#each this}}
+    <tr>
+      <td>
+        <div class='wrrap-icon_category'>
+          <svg class='icon svg_icon_category'><use href='{{idIcon category}}'></use></svg>
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-name td-notes'>
+          {{name}}
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-craeted td-notes'>
+          {{craeted}}
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-category td-notes'>
+          {{category}}
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-content td-notes'>
+          {{content}}
+        </div>
+      </td>
+      <td>
+        <div class='wrrap-dates td-notes'>
+          {{filterdDate content dates}}
+        </div>
+      </td>
+
+      <td>
+        <div class='wrrap_icon_edit icon_change_note' data-id='{{id}}'>
+          <svg class='icon svg_icon_edit'><use href='{{idIcon "pen"}}'></use></svg>
+        </div>
+      </td>
+      {{#if archived}}
+        <td>
+          <div class='wrrap_icon_archive icon_change_note' data-id='{{id}}'>
+            <svg class='icon svg_icon_delete'><use href='{{idIcon "out_archive"}}'></use></svg>
+          </div>
+        </td>
+      {{/if}}
+      {{#unless archived}}
+        <td>
+          <div class='wrrap_icon_archive icon_change_note' data-id='{{id}}'>
+            <svg class='icon svg_icon_delete'><use href='{{idIcon "in_archive"}}'></use></svg>
+          </div>
+        </td>
+      {{/unless}}
+      <td>
+        <div class='wrrap_icon_delete icon_change_note' data-id='{{id}}'>
+          <svg class='icon svg_icon_delete'><use href='{{idIcon "delete"}}'></use></svg>
+        </div>
+      </td>
+    </tr>
+  {{/each}}
+</script>

@@ -1,0 +1,76 @@
+.td-notes {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrrap-name {
+  width: 70px;
+  font-weight: bold;
+}
+
+.column-icon-category-notes {
+  width: 8%;
+}
+.column-name-notes {
+  width: 12%;
+}
+.column-created-notes {
+  width: 14%;
+}
+.column-category-notes {
+  width: 12%;
+}
+.column-content-notes {
+  width: 22%;
+}
+.column-dates-notes {
+  width: 19%;
+}
+.column-icon-notes {
+  width: 5%;
+}
+
+.wrrap_archive {
+  cursor: pointer;
+}
+
+.wrrap-icon_category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+
+  background-color: var(--color-fill-icon);
+  color: var(--color-text-white);
+}
+
+.icon_change_note .icon {
+  width: 20px;
+  height: 20px;
+
+  cursor: pointer;
+}
+
+.icon_change_note:hover {
+  color: var(--color-icon-black);
+}
+
+.icon-header:hover {
+  color: var(--color-bgc-td);
+}
+
+.wrrap-btn-create-note {
+  display: flex;
+  justify-content: flex-end;
+
+  margin: 10px 0 30px;
+}
+
+.btn-create-note {
+  width: 100px;
+}
