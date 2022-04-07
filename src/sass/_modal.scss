@@ -1,4 +1,4 @@
-.toggle_scroll {
+.toggle-scroll {
   overflow: hidden;
 }
 //----------
@@ -33,10 +33,10 @@
   top: 100px;
   transform: translateX(-50%) scale(1);
 
-  width: 100%;
-
-  max-width: 880px;
+  // width: 450px;
   padding: 42px 30px 40px 28px;
+
+  border-radius: 10px;
 
   background-color: var(--color-text-white);
   box-shadow: var(--team-shadow);
@@ -54,4 +54,14 @@
   position: absolute;
   top: 10px;
   right: 10px;
+}
+
+.close-btn:hover {
+  color: var(--color-fill-icon);
+}
+
+.content-modal {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

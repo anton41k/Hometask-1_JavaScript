@@ -1,7 +1,7 @@
 import Handlebars from 'handlebars';
 
-import getRefs from './getRefs';
-import { COLUMNS } from '../CONST';
+import getRefs from '../getRefs';
+import { COLUMNS } from '../../CONST';
 
 const refs = getRefs();
 
@@ -39,4 +39,4 @@ export const renderTableSummary = dataNotes => {
 
 const sourceHeader = refs.headerSummaryTemplate.innerHTML;
 const templateHeader = Handlebars.compile(sourceHeader);
-export const summaryHtmlHeader = templateHeader(COLUMNS.summary);
+refs.headerTableSummary.innerHTML = templateHeader(COLUMNS.summary);

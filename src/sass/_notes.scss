@@ -31,11 +31,11 @@
   width: 5%;
 }
 
-.wrrap_archive {
+.wrrap-archive {
   cursor: pointer;
 }
 
-.wrrap-icon_category {
+.wrrap-icon-category {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,14 +49,14 @@
   color: var(--color-text-white);
 }
 
-.icon_change_note .icon {
+.icon-change-note .icon {
   width: 20px;
   height: 20px;
 
   cursor: pointer;
 }
 
-.icon_change_note:hover {
+.icon-change-note:hover {
   color: var(--color-icon-black);
 }
 

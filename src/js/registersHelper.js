@@ -1,4 +1,5 @@
 import Handlebars from 'handlebars';
+import moment from 'moment';
 
 import sprite from '../images/sprite.svg';
 

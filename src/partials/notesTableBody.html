@@ -2,8 +2,8 @@
   {{#each this}}
     <tr>
       <td>
-        <div class='wrrap-icon_category'>
-          <svg class='icon svg_icon_category'><use href='{{idIcon category}}'></use></svg>
+        <div class='wrrap-icon-category'>
+          <svg class='icon svg-icon-category'><use href='{{idIcon category}}'></use></svg>
         </div>
       </td>
       <td>
@@ -33,27 +33,27 @@
       </td>
 
       <td>
-        <div class='wrrap_icon_edit icon_change_note' data-id='{{id}}'>
-          <svg class='icon svg_icon_edit'><use href='{{idIcon "pen"}}'></use></svg>
+        <div class='wrrap-icon-edit icon-change-note' data-id='{{id}}'>
+          <svg class='icon svg-icon-edit'><use href='{{idIcon "pen"}}'></use></svg>
         </div>
       </td>
       {{#if archived}}
         <td>
-          <div class='wrrap_icon_archive icon_change_note' data-id='{{id}}'>
-            <svg class='icon svg_icon_delete'><use href='{{idIcon "out_archive"}}'></use></svg>
+          <div class='wrrap-icon-archive icon-change-note' data-id='{{id}}'>
+            <svg class='icon svg-icon-delete'><use href='{{idIcon "out_archive"}}'></use></svg>
           </div>
         </td>
       {{/if}}
       {{#unless archived}}
         <td>
-          <div class='wrrap_icon_archive icon_change_note' data-id='{{id}}'>
-            <svg class='icon svg_icon_delete'><use href='{{idIcon "in_archive"}}'></use></svg>
+          <div class='wrrap-icon-archive icon-change-note' data-id='{{id}}'>
+            <svg class='icon svg-icon-delete'><use href='{{idIcon "in_archive"}}'></use></svg>
           </div>
         </td>
       {{/unless}}
       <td>
-        <div class='wrrap_icon_delete icon_change_note' data-id='{{id}}'>
-          <svg class='icon svg_icon_delete'><use href='{{idIcon "delete"}}'></use></svg>
+        <div class='wrrap-icon-delete icon-change-note' data-id='{{id}}'>
+          <svg class='icon svg-icon-delete'><use href='{{idIcon "delete"}}'></use></svg>
         </div>
       </td>
     </tr>

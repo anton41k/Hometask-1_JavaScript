@@ -1,0 +1,25 @@
+<h2 class='title-form'>ADD HOTE</h2>
+<form name='add-note' class='form-note form-add-note'>
+
+  <label for='input-name'>Name</label>
+  <input id='input-name' class='input-name' type='text' value='' name='name' autocomplete='on' />
+
+  <label for='select-category'>Category</label>
+  <select id='select-category' name='category'>
+    {{#each this}}
+      <option value='{{this}}'>{{this}}</option>
+    {{/each}}
+  </select>
+
+  <label for='input-content'>Content</label>
+  <textarea
+    id='input-content'
+    rows='5'
+    cols='43'
+    value=''
+    name='content'
+    autocomplete='on'
+  ></textarea>
+
+  <button class='btn-submit' type='submit'>Add Note</button>
+</form>

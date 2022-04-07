@@ -1,9 +1,12 @@
 import Handlebars from 'handlebars';
 
-import getRefs from './getRefs';
-import getDataNotes from '../data.json';
-import { COLUMNS } from '../CONST';
-import { eventListener, eventListenerArchivedNote, eventListenerRemoveNote } from './eventListener';
+import getRefs from '../getRefs';
+import { COLUMNS } from '../../CONST';
+import {
+  eventListenerArchivedNote,
+  eventListenerOpenEditModal,
+  eventListenerOpenRemoveModal,
+} from '../eventListener';
 
 const refs = getRefs();
 
@@ -15,10 +18,11 @@ export const renderTableNotes = ({ isArchived, data }) => {
   refs.bodyTableNotes.innerHTML = '';
   refs.bodyTableNotes.innerHTML = notesHtmlBody;
 
-  eventListenerRemoveNote();
   eventListenerArchivedNote();
+  eventListenerOpenEditModal();
+  eventListenerOpenRemoveModal();
 };
 
 const sourceHeader = refs.headerNotesTemplate.innerHTML;
 const templateHeader = Handlebars.compile(sourceHeader);
-export const notesHtmlHeader = templateHeader(COLUMNS.notes);
+refs.headerTableNotes.innerHTML = templateHeader(COLUMNS.notes);

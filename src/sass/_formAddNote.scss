@@ -1,0 +1,28 @@
+.form-note {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  width: 400px;
+  padding: 0 30px;
+}
+
+.form-note label {
+  margin: 10px 0 3px 5px;
+  font-size: 15px;
+}
+
+.form-note input {
+  outline: none;
+
+  width: 340px;
+}
+
+.btn-submit {
+  margin: 20px auto 0;
+  width: 200px;
+}
+
+.title-form {
+  color: var(--color-icon-black);
+}
