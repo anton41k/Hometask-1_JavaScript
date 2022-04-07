@@ -1,9 +1,9 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>NOTES</title><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin=""><script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script><link rel="stylesheet" href="/Hometask-1_JavaScript/src.17bd1526.css"></head><body> <div class="container"> <table id="notes"> <colgroup> <col class="column-icon-category-notes"> <col class="column-name-notes"> <col class="column-created-notes"> <col class="column-category-notes"> <col class="column-content-notes"> <col class="column-dates-notes"> <col span="3" class="column-icon-notes"> </colgroup> <tbody class="header-notes"></tbody> <tbody class="body-notes"></tbody> </table> <script id="notes-body-template" type="text/x-handlebars-template">
+<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>NOTES</title><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g==" crossorigin=""><script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.min.js"></script><link rel="stylesheet" href="/Hometask-1_JavaScript/src.f927c752.css"></head><body> <div class="container"> <table id="notes"> <colgroup> <col class="column-icon-category-notes"> <col class="column-name-notes"> <col class="column-created-notes"> <col class="column-category-notes"> <col class="column-content-notes"> <col class="column-dates-notes"> <col span="3" class="column-icon-notes"> </colgroup> <tbody class="header-notes"></tbody> <tbody class="body-notes"></tbody> </table> <script id="notes-body-template" type="text/x-handlebars-template">
   {{#each this}}
     <tr>
       <td>
-        <div class='wrrap-icon_category'>
-          <svg class='icon svg_icon_category'><use href='{{idIcon category}}'></use></svg>
+        <div class='wrrap-icon-category'>
+          <svg class='icon svg-icon-category'><use href='{{idIcon category}}'></use></svg>
         </div>
       </td>
       <td>
@@ -33,27 +33,27 @@
       </td>
 
       <td>
-        <div class='wrrap_icon_edit icon_change_note' data-id='{{id}}'>
-          <svg class='icon svg_icon_edit'><use href='{{idIcon "pen"}}'></use></svg>
+        <div class='wrrap-icon-edit icon-change-note' data-id='{{id}}'>
+          <svg class='icon svg-icon-edit'><use href='{{idIcon "pen"}}'></use></svg>
         </div>
       </td>
       {{#if archived}}
         <td>
-          <div class='wrrap_icon_archive icon_change_note' data-id='{{id}}'>
-            <svg class='icon svg_icon_delete'><use href='{{idIcon "out_archive"}}'></use></svg>
+          <div class='wrrap-icon-archive icon-change-note' data-id='{{id}}'>
+            <svg class='icon svg-icon-delete'><use href='{{idIcon "out_archive"}}'></use></svg>
           </div>
         </td>
       {{/if}}
       {{#unless archived}}
         <td>
-          <div class='wrrap_icon_archive icon_change_note' data-id='{{id}}'>
-            <svg class='icon svg_icon_delete'><use href='{{idIcon "in_archive"}}'></use></svg>
+          <div class='wrrap-icon-archive icon-change-note' data-id='{{id}}'>
+            <svg class='icon svg-icon-delete'><use href='{{idIcon "in_archive"}}'></use></svg>
           </div>
         </td>
       {{/unless}}
       <td>
-        <div class='wrrap_icon_delete icon_change_note' data-id='{{id}}'>
-          <svg class='icon svg_icon_delete'><use href='{{idIcon "delete"}}'></use></svg>
+        <div class='wrrap-icon-delete icon-change-note' data-id='{{id}}'>
+          <svg class='icon svg-icon-delete'><use href='{{idIcon "delete"}}'></use></svg>
         </div>
       </td>
     </tr>
@@ -66,13 +66,13 @@
     {{/each}}
     <th></th>
     <th>
-      <div class='wrrap_archive icon-header'>
-        <svg class='icon svg_archive'><use href='{{idIcon "in_archive"}}'></use></svg>
+      <div class='wrrap-archive icon-header'>
+        <svg class='icon svg-archive'><use href='{{idIcon "in_archive"}}'></use></svg>
       </div>
     </th>
     <th>
-      <div class='wrrap_icon_delete-all icon-header'>
-        <svg class='icon svg_delete'><use href='{{idIcon "delete"}}'></use></svg>
+      <div class='wrrap-icon-delete-all icon-header'>
+        <svg class='icon svg-delete'><use href='{{idIcon "delete"}}'></use></svg>
       </div>
     </th>
   </tr>
@@ -80,8 +80,8 @@
   {{#each this}}
     <tr>
       <td>
-        <div class='wrrap-icon_category'>
-          <svg class='icon svg_icon_category'><use href='{{idIcon category}}'></use></svg>
+        <div class='wrrap-icon-category'>
+          <svg class='icon svg-icon-category'><use href='{{idIcon category}}'></use></svg>
         </div>
       </td>
       <td>
@@ -109,4 +109,4 @@
       <th>{{firstLetterTitle this}}</th>
     {{/each}}
   </tr>
-</script> <table id="summary"> <colgroup> <col class="column-icon"> <col class="column-category-summary"> <col class="column-active"> <col class="column-archived"> </colgroup> <tbody class="header-summary"></tbody> <tbody class="body-summary"></tbody> </table> </div> <div class="backdrop backdrop--is-hidden"> <div class="modal-container"> <button class="close-btn"> <svg class="wrrap-icon-close" width="30" height="30"> <use class="icon-close" href="/Hometask-1_JavaScript/sprite.31545a7e.svg#icon-pen"></use> </svg> </button> <div class="content-modal"></div> </div> </div> <script src="/Hometask-1_JavaScript/src.eaa8ac58.js"></script> </body></html>
+</script> <table id="summary"> <colgroup> <col class="column-icon"> <col class="column-category-summary"> <col class="column-active"> <col class="column-archived"> </colgroup> <tbody class="header-summary"></tbody> <tbody class="body-summary"></tbody> </table> </div> <div class="backdrop backdrop--is-hidden"> <div class="modal-container"> <button class="close-btn"> <svg class="icon wrrap-icon-close" width="30" height="30"> <use class="icon-close" href="/Hometask-1_JavaScript/sprite.4471da85.svg#icon-close"></use> </svg> </button> <div class="content-modal"></div> </div> </div> <script src="/Hometask-1_JavaScript/src.c7e615af.js"></script> </body></html>
